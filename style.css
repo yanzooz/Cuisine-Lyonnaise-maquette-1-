@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--work-sans);
+}
+
+:root {
+  --amatic: "Amatic SC", serif;
+  --work-sans: Work sans, sans-serif;
+}
+
+/*Maquette 1*/
+
+/* body {
+  font-size: 16px;
+  text-align: center;
+}
+
+header {
+  color: white;
+  background-color: #333;
+  h1 {
+    padding: 20px 0px;
+    font-size: 28px;
+  }
+}
+
+#aboutUs {
+  border: #dddddd solid 1px;
+  background-color: #f9f9f9;
+  margin: 30px;
+  h2,
+  img {
+    margin: 15px 0px;
+  }
+  h2 {
+      font-size: 24px;
+  }
+}
+
+#aboutUs img {
+  width: 50%;
+}
+
+#ourServices {
+  padding: 15px;
+  border: #dddddd solid 1px;
+  background-color: #f9f9f9;
+  margin: 30px;
+  text-align: left;
+}
+
+#ourServices ul {
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin: 40px 0px;
+} */
+
+/*Exercie Les priorités CSS*/
+
+/* header {
+  background-color: blueviolet;
+  color: aliceblue;
+  margin: 0px 50px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: chartreuse;
+  list-style: none;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+section#content article h3 {
+  font-family: Arial, sans-serif;
+}
+
+section#content article {
+  background-color: darkgray;
+  border: black solid 2px;
+}
+
+.widget:first-of-type {
+  background-color: rgb(209, 34, 57);
+}
+
+.widget {
+  background-color: rgb(255, 200, 133);
+}
+
+section#content {
+  border: red 5px solid;
+}
+
+footer {
+  background-color: cornflowerblue;
+  margin-bottom: 50px;
+}
+
+footer p {
+  color: rgb(0, 255, 200);
+} */
+
+/*Exercice Les Flexbox*/
+/* h1 {
+  margin: auto;
+}
+
+.container {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: space-around;
+  width: 840px;
+  padding: 10px;
+  margin: 25px auto 0;
+}
+
+.card {
+  background-color: rgb(83, 177, 255);
+  color: aliceblue;
+  height: 150px;
+  width: 200px;
+  text-align: center;
+  align-content: center;
+  margin: 10px;
+}
+
+h2 {
+  margin: 50px 0px;
+}
+
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 300px;
+  margin: auto;
+
+  .grid {
+    width: 90px;
+    height: 100px;
+    background-color: #3498db;
+  }
+} */
+
+/* Exercice les Media Queries */
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #a3daff;
+      color: #fff;
+      text-align: center;
+      font-size: 34px;
+      margin: 10px;
+    }
+  }
+} */
+
+/* MAQUETTE 1 DESKTOP */
+@media (min-width: 788px) {
+  header {
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("img/lyon.webp");
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    padding: 120px 0;
+
+    h1 {
+      font-family: var(--amatic);
+      font-weight: 700;
+      font-size: 50px;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        margin: 15px 5px;
+        list-style: none;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  section#lyonFoods {
+    margin: 30px;
+    display: flex;
+    img {
+      height: 150px;
+    }
+    div {
+      margin: 0px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        font-family: var(--amatic);
+        font-weight: 700;
+        font-style: normal;
+        margin-bottom: 10px;
+      }
+      p {
+        line-height: 1.5;
+      }
+    }
+  }
+
+  section#famousDishes {
+    margin: 20px 20px;
+    text-align: center;
+    h2 {
+      margin: 15px;
+      font-family: "Amatic SC", serif;
+      font-weight: 700;
+    }
+    #listCards {
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+
+      .card-dishes {
+        background-color: rgb(243, 243, 243);
+        border: rgb(219, 219, 219) solid 2px;
+        width: 363px;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 3px rgba(0, 0, 0, 0.247);
+        margin: 25px 20px;
+        font-size: 20px;
+        font-weight: 550;
+        h4 {
+          font-weight: 500;
+          margin: 20px 0px;
+        }
+        img {
+          object-fit: cover;
+          width: 189.5px;
+          height: 189.5px;
+        }
+        p {
+          padding: 20px 15px;
+          line-height: 1.5;
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  section#bestRestaurants {
+    h2 {
+      font-family: var(--amatic);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    container#listRestaurants {
+      display: flex;
+      justify-content: space-around;
+      div.card-restaurant {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0px 40px;
+        img {
+          object-fit: cover;
+          width: 200px;
+          height: 200px;
+        }
+        h5 {
+          font-size: 14px;
+          font-weight: 550;
+          margin: 15px 0px;
+          line-height: 1.5;
+        }
+        p {
+          line-height: 2;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    margin-top: 20px;
+    padding: 50px 0px 20px 0px;
+    container#information {
+      display: flex;
+      justify-content: space-around;
+
+      div#contactUs {
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+        p {
+          font-size: 10px;
+        }
+      }
+
+      div#followUs {
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+        p a {
+          font-size: 10px;
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+    > p {
+      font-size: 11px;
+      margin-top: 20px;
+      padding: 20px 0px;
+      background-color: rgb(34, 34, 34);
+      text-align: center;
+    }
+  }
+}
+
+/* MAQUETTE 1 MOBILE */
+@media (max-width: 788px) {
+  header {
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("img/lyon.webp");
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    padding: 220px 100px;
+
+    h1 {
+      font-family: var(--amatic);
+      font-weight: 700;
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      li {
+        margin: 15px 5px;
+        list-style: none;
+        a {
+          color: white;
+        }
+      }
+    }
+    p {
+      line-height: 2;
+    }
+  }
+
+  section#lyonFoods {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    img {
+      object-fit: cover;
+      height: 150px;
+      width: 320px;
+    }
+    div {
+      margin: 15px 0px;
+      h2 {
+        font-family: var(--amatic);
+        font-weight: 700;
+        font-style: normal;
+        margin: 15px 0px;
+      }
+      p {
+        line-height: 1.5;
+      }
+    }
+  }
+
+  section#famousDishes {
+    margin: 20px 20px;
+    text-align: center;
+    h2 {
+      margin: 15px;
+      font-family: "Amatic SC", serif;
+      font-weight: 700;
+    }
+    #listCards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+
+      .card-dishes {
+        background-color: rgb(243, 243, 243);
+        border: rgb(219, 219, 219) solid 2px;
+        width: 263px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 3px rgba(0, 0, 0, 0.247);
+        margin: 25px 0px;
+        font-size: 20px;
+        font-weight: 550;
+        h4 {
+          font-weight: 500;
+          margin: 20px 0px;
+        }
+        img {
+          object-fit: cover;
+          width: 189.5px;
+          height: 189.5px;
+        }
+        p {
+          padding: 20px 15px;
+          line-height: 2;
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  section#bestRestaurants {
+    h2 {
+      font-family: var(--amatic);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    container#listRestaurants {
+      display: flex;
+      flex-direction: column;
+      div.card-restaurant {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0px 40px;
+        margin-bottom: 30px;
+        img {
+          object-fit: cover;
+          width: 250px;
+          height: 250px;
+        }
+        h5 {
+          font-size: 15px;
+          font-weight: 550;
+          margin: 15px 0px;
+          line-height: 1.5;
+        }
+        p {
+          line-height: 1.7;
+          font-size: 14px;
+          padding: 0px 25px;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 20px 0px 20px 0px;
+    container#information {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      div#contactUs {
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+        p {
+          font-size: 11px;
+          line-height: 3;
+        }
+      }
+
+      div#followUs {
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+        p a {
+          font-size: 11px;
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+    > p{
+      font-size: 13px;
+      margin-top: 20px;
+      padding: 20px 0px;
+      background-color: rgb(34, 34, 34);
+      text-align: center;
+    }
+  }
+}
